@@ -1,5 +1,5 @@
 :root {
-  font-size : 14px;
+	font-size : 14px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -7,100 +7,148 @@
 	padding: 0;
 	margin: 0;
 	font-size: 14.5px;
-
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
+
 body{
 	background-color: hsl(30, 38%, 92%);
+	padding: 3rem 1rem;
 	display: flex;
 	flex-direction: column;
-	padding: 3rem 0;
-	/* justify-content: center; */
 	align-items: center;
-
 }
 
 main{
 	background-color: hsl(0, 0%, 100%);
-	width: 370px;
+	width: auto;
 	height: auto;
 	border-radius: 15px;
+	margin-bottom: 20px;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 }
 
 #illustration{
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-img{
-  width: 100%;
+#imgProductMobile{
+	width: 100%;
+}
+#imgProductDesktop{
+	display: none;
 }
 
 #descriptionSection{
 	background-color: hsl(0, 0%, 100%);
 	height: 100%;
+	gap: 20px;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
-	padding: 30px;
 	justify-content: center;
 }
 
 #productCategory{
-	letter-spacing: 6px;
 	color: hsl(228, 12%, 48%);
+	letter-spacing: 3px;
 }
 
 h1{
 	color: hsl(212, 21%, 14%);
-	line-height: 25px;
-	font-size: 2.5rem;
+	line-height: 33px;
+	font-size: 2.3rem;
 	font-family: 'Fraunces', serif;
 	text-transform: capitalize;
-	margin: 20px 0;
 }
 
 #description{
-	line-height: 23px;
 	color: hsl(228, 12%, 48%);
+	line-height: 23px;
 }
 
 #prices{
-	margin: 20px 0;
+	gap: 15px;
 	display: flex;
 	flex-direction: row;
-	gap: 30px;
 	align-items: center;
 }
 
 #salePrice{
-	font-size: 2.5rem;
+	color: hsl(158, 36%, 37%);
+	font-size: 2.3rem;
 	font-weight: bold;
 	font-family: 'Fraunces', serif;
-	color: hsl(158, 36%, 37%);
 }
 
 #regularPrice{
-	text-decoration: line-through;
 	color: hsl(228, 12%, 48%);
+	text-decoration: line-through;
 }
 
 button{
-	height: 60px;
 	background-color: hsl(158, 36%, 37%);
+	height: 50px;
+	width: 100%;
 	border-radius: 10px;
 	border: none;
+	gap: 7px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: white;
+	transition: 0.5s;
+	cursor: pointer;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
-	font-size: 1.3rem;
-	font-weight: bold;
-	color: white;
+}
+
+button:hover{
+	background-color: hsl(158, 36%, 21%);
+	transition: 0.5s;
 }
 
 #cartIllustration{
 	width: 22px;
 }
 
+@media screen and (min-width: 376px){
+	main{
+		background-color: royalblue;
+		height: 430px;
+		width: 580px;
+		flex-direction: row;
+	}
+
+	#illustration{
+		height: 100%;
+		width: 50%;overflow: hidden;
+		background-color: rebeccapurple;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	#imgProductMobile{
+		display: none;
+	}
+	
+	#imgProductDesktop{
+		width: 100%;
+		display: block;
+	}
+
+	#descriptionSection{
+		width: 50%;
+		height: auto;
+		gap: 15px;
+		align-items: flex-start;
+	}
+}
