@@ -91,6 +91,10 @@ h1{
 	text-decoration: line-through;
 }
 
+a{
+	text-decoration: none;
+}
+
 button{
 	background-color: hsl(158, 36%, 37%);
 	height: 50px;
@@ -112,6 +116,10 @@ button{
 button:hover{
 	background-color: hsl(158, 36%, 21%);
 	transition: 0.5s;
+}
+
+a:focus-visible, button:focus-visible{
+	border: 2px dashed rgb(189, 65, 65);
 }
 
 #cartIllustration{
