@@ -1,0 +1,106 @@
+:root {
+  font-size : 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 14.5px;
+
+}
+body{
+	background-color: hsl(30, 38%, 92%);
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 0;
+	/* justify-content: center; */
+	align-items: center;
+
+}
+
+main{
+	background-color: hsl(0, 0%, 100%);
+	width: 370px;
+	height: auto;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+#illustration{
+
+}
+
+img{
+  width: 100%;
+}
+
+#descriptionSection{
+	background-color: hsl(0, 0%, 100%);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	justify-content: center;
+}
+
+#productCategory{
+	letter-spacing: 6px;
+	color: hsl(228, 12%, 48%);
+}
+
+h1{
+	color: hsl(212, 21%, 14%);
+	line-height: 25px;
+	font-size: 2.5rem;
+	font-family: 'Fraunces', serif;
+	text-transform: capitalize;
+	margin: 20px 0;
+}
+
+#description{
+	line-height: 23px;
+	color: hsl(228, 12%, 48%);
+}
+
+#prices{
+	margin: 20px 0;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	align-items: center;
+}
+
+#salePrice{
+	font-size: 2.5rem;
+	font-weight: bold;
+	font-family: 'Fraunces', serif;
+	color: hsl(158, 36%, 37%);
+}
+
+#regularPrice{
+	text-decoration: line-through;
+	color: hsl(228, 12%, 48%);
+}
+
+button{
+	height: 60px;
+	background-color: hsl(158, 36%, 37%);
+	border-radius: 10px;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: white;
+}
+
+#cartIllustration{
+	width: 22px;
+}
+
